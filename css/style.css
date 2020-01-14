@@ -8,7 +8,6 @@ html {
 
 body {
   background-color: #fff;
-
 }
 
 h1 {
@@ -29,11 +28,9 @@ h1 {
   display: none;
 }
 
-
 /* 
 title
  */
-
 
 .title {
   position: relative;
@@ -52,20 +49,15 @@ title
   margin-right: auto;
 }
 
-.title::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/Rectangle\ 8\ copy\ 2.png);
+.title::after {
+  content: '';
+  display: block;
+  background-image: url(../img/2.png);
   width: 164px;
   height: 15px;
-
-  top: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-
+  margin: 0px auto;
+  margin-top: 20px;
 }
-
-
 
 /* 
 Стили списка
@@ -105,7 +97,6 @@ title
   padding-bottom: 33px;
 }
 
-
 /* 
   User Навигация 
  */
@@ -119,7 +110,6 @@ title
   font-size: 14px;
 
   color: #fff;
-
 }
 
 .сontacts-list {
@@ -151,7 +141,6 @@ title
   background-image: url(../img/tell.png);
   background-repeat: no-repeat;
   left: -23px;
-
 }
 
 .email::before {
@@ -162,7 +151,6 @@ title
   background-image: url(../img/email.png);
   background-repeat: no-repeat;
   left: -29px;
-
 }
 
 .focus-hover:hover,
@@ -239,13 +227,6 @@ title
 /* 
 Секция Hero
 */
-.hero {
-  width: 1648px;
-  height: 618px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-}
 
 .hero .img {
   display: block;
@@ -255,6 +236,11 @@ title
 
 .overlay {
   position: relative;
+  width: 1648px;
+  height: 618px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 .wrapper-hero-content {
@@ -264,8 +250,13 @@ title
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
-
+.wrapper-hero-content button {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wrapper-hero-content p {
@@ -279,8 +270,6 @@ title
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 p.bold-text {
   font-weight: bold;
@@ -307,7 +296,7 @@ p.bold-text {
  */
 
 .about {
-  padding-top: 220px;
+  padding-top: 100px;
   padding-bottom: 80px;
 }
 
@@ -359,65 +348,52 @@ Icons
  */
 
 .setting::before {
-  position: absolute;
-  content: "";
+  display: flex;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  content: '';
   width: 66px;
   height: 66px;
   background-image: url(../img/settig.png);
   background-repeat: no-repeat;
-
-  left: 50%;
-  transform: translateX(-50%);
-
-  top: -127px;
-
 }
 
 .money::before {
-  position: absolute;
-  content: "";
+  display: flex;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  content: '';
   width: 58px;
-  height: 53px;
-  background-image: url(../img/money.png);
+  height: 66px;
   background-repeat: no-repeat;
-
-  left: 50%;
-  transform: translateX(-50%);
-
-  top: -119px;
-
+  background-image: url(../img/money.png);
 }
 
 .worldwide::before {
-  position: absolute;
-  content: "";
-  width: 58px;
-  height: 59px;
-  background-image: url(../img/worldw.png);
+  display: flex;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  content: '';
+  width: 66px;
+  height: 66px;
   background-repeat: no-repeat;
-
-  left: 50%;
-  transform: translateX(-50%);
-
-  top: -119px;
-
+  background-image: url(../img/worldw.png);
 }
 
 .shipping::before {
-  position: absolute;
-  content: "";
+  display: flex;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  content: '';
   width: 56px;
   height: 66px;
-  background-image: url(../img/shipping.png);
   background-repeat: no-repeat;
-
-  left: 50%;
-  transform: translateX(-50%);
-
-  top: -120px;
-
+  background-image: url(../img/shipping.png);
 }
-
 
 /* 
   New Collection
@@ -428,35 +404,28 @@ Icons
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #e9f0fd;
-
 }
-
-
 
 /* 
   Cards
 */
 
 .card-overlay::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 235px;
   height: 230px;
   top: 100%;
   background-color: rgba(15, 1, 1, 0.55);
-  border: 10px solid rgba(255, 255, 255, 0.90);
+  border: 10px solid rgba(255, 255, 255, 0.9);
 
   transition: top 250ms cubic-bezier(0, 0, 0.58, 1);
 }
-
-
-
 
 .card-liste {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .card-item {
@@ -467,20 +436,17 @@ Icons
   margin-bottom: 30px;
 }
 
-.card-item:nth-last-child(4n+1) {
+.card-item:nth-last-child(4n + 1) {
   margin-right: 0px;
 }
 
-.card-item:nth-last-child(-n+4) {
+.card-item:nth-last-child(-n + 4) {
   margin-bottom: 0px;
-
 }
-
 
 .img-container {
   position: relative;
   height: 250px;
-
 }
 
 .img-card {
@@ -518,8 +484,6 @@ Icons
   transition: opacity 250ms cubic-bezier(0, 0, 0.58, 1) 250ms;
 }
 
-
-
 .button-icon {
   position: relative;
   border: 1px solid #fff;
@@ -530,11 +494,10 @@ Icons
   margin-bottom: 10px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .icon-like::before {
-  content: "";
+  content: '';
   background-image: url(../img/like.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -546,12 +509,10 @@ Icons
   transform: translate(-50%, -50%);
 
   z-index: 4;
-
-
 }
 
 .icon-basket::before {
-  content: "";
+  content: '';
   background-image: url(../img/basket.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -561,13 +522,10 @@ Icons
   top: 8px;
   left: 12px;
   z-index: 4;
-
-
-
 }
 
 .icon-arrow::before {
-  content: "";
+  content: '';
   background-image: url(../img/arrows.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -579,12 +537,10 @@ Icons
   transform: translate(-50%, -50%);
 
   z-index: 4;
-
-
 }
 
 .icon-clock::before {
-  content: "";
+  content: '';
   background-image: url(../img/clock.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -596,10 +552,7 @@ Icons
   transform: translate(-50%, -50%);
 
   z-index: 4;
-
-
 }
-
 
 .button-icon:nth-last-child(2) {
   margin-right: 0px;
@@ -617,18 +570,13 @@ Icons
   text-transform: uppercase;
   color: #fff;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: -0.02em;
   background-color: #323232;
   padding: 17px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
-
-
-
 
 /* 
     Products
@@ -654,14 +602,11 @@ Icons
 
 .card-item:hover .card-overlay::before,
 .card-item:focus .card-overlay::before {
-
-
   top: 0;
 }
 
 .card-item:hover .actions,
 .card-item:focus .actions {
-
   opacity: 1;
 }
 
@@ -669,17 +614,13 @@ Icons
 .button-icon:focus {
   background-color: rgba(26, 188, 156, 1);
   cursor: pointer;
-
 }
 
 .button-add:hover,
 .button-add.focus {
   background-color: rgba(26, 188, 156, 1);
   cursor: pointer;
-
 }
-
-
 
 /* 
 Имя товара и цена
@@ -826,7 +767,6 @@ Icons
   background-image: url(../img/bg2decor-full.png);
   background-repeat: repeat;
   background-color: #4ec6ab;
-
 }
 
 .title-footer {
@@ -846,22 +786,21 @@ Icons
   margin-right: auto;
 }
 
-.title-footer::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/Rectangle\ 8\ 1.png);
+.title-footer::after {
+  content: '';
+
+  background-image: url(../img/3.png);
+  display: block;
+
   width: 164px;
   height: 15px;
-
-  top: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-
+  margin: 0px auto;
+  margin-top: 20px;
 }
 
 .text-footer {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.02em;
@@ -882,7 +821,6 @@ Icons
   background-position: center;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .button-email:hover,
@@ -904,7 +842,7 @@ Icons
   border-radius: 5px 0px 0px 5px;
   padding: 25px 0px 25px 30px;
 
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 16px;
   line-height: 26px;
   letter-spacing: -0.02em;
