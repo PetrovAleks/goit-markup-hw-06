@@ -236,7 +236,7 @@ title
 
 .overlay {
   position: relative;
-  width: 1648px;
+
   height: 618px;
   margin-left: auto;
   margin-right: auto;
@@ -280,7 +280,7 @@ p.bold-text {
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 1648px;
   height: 100%;
   content: '';
   background-color: rgba(0, 0, 0, 0.53);
